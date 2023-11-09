@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    padding: 4%;
+    min-height: 100vh;
+    background-color: white;
+
+}
+.gen-profilepict {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+.gen-profilename {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+}
+
+.gen-button{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    background-color: #43e660;
+    border-color: #43e660;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 15px 0px 15px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 670px;
+    height: 20px;
+    text-decoration: none;
+    
+}
+
+.gen-button:hover{
+    transform: scale(1.05);
+}
+
+.gen-button:hover::after {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transition-duration: .15s;
+    font-size: 18px;
+    color: black;
+}
+
