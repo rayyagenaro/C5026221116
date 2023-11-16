@@ -10,5 +10,7 @@
 	<p>Ini adalah view blog. ada di route blog.</p>
     <p>GOBLOUG</p>
 
+    <a href="showjam/{{ date('G:i:s')}}">Klik Disini</a>
+
 </body>
 </html>

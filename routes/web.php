@@ -15,7 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view ("welcome");
+});
 
+Route::get('blog', function () {
+    return view ("blog");
+});
+
+Route::get('/blog', function () {
+    return view('home') ;
+});
+
+Route::get('/blog/tentang', function () {
+    return view('tentang') ;
+});
+
+Route::get('/blog/kontak', function () {
+    return view('kontak') ;
 });
 
 Route::get('meet1', function () {
@@ -66,8 +81,14 @@ Route::get('meet7', function () {
     return view("meet7");
 });
 
+Route::get('biodata', 'App\Http\Controllers\DosenController@biodata');
 
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
+Route::get('showjam/{jam}', 'App\Http\Controllers\DosenController@showtime');
+Route::get('formulir', 'App\Http\Controllers\DosenController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
+
+
 
 
 
