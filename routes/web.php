@@ -67,6 +67,9 @@ Route::get('meet7', function () {
 });
 
 
+Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
+
+
 
 
 
