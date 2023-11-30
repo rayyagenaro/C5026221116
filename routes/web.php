@@ -17,29 +17,48 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tugas-1', function () {
-    return view('tugas1') ;
+Route::get('/meet1', function () {
+    return view('meet1') ;
 });
 
-Route::get('/tugas-2', function () {
-    return view('tugas2') ;
+Route::get('/meet2', function () {
+    return view('meet2') ;
 });
 
-Route::get('/tugas-3', function () {
-    return view('tugas3') ;
+Route::get('/meet3-1', function () {
+    return view('meet3-1') ;
 });
 
-Route::get('/tugas-4', function () {
-    return view('tugas4') ;
+Route::get('/meet3-2', function () {
+    return view('meet3-2') ;
 });
 
-Route::get('/tugas-5', function () {
-    return view('tugas5') ;
+Route::get('/meet3-3', function () {
+    return view('meet3-3') ;
 });
 
-Route::get('/tugas-6', function () {
-    return view('tugas6') ;
+Route::get('/meet3-4', function () {
+    return view('meet3-4') ;
 });
+Route::get('/meet3', function () {
+    return view('meet3') ;
+});
+Route::get('/meet4', function () {
+    return view('meet4') ;
+});
+Route::get('/meet5-1', function () {
+    return view('meet5-1') ;
+});
+Route::get('/meet5-2', function () {
+    return view('meet5-2') ;
+});
+Route::get('/meet6', function () {
+    return view('meet6') ;
+});
+Route::get('/meet7', function () {
+    return view('meet7') ;
+});
+
 
 Route::get('/blog2', function () {
     return view('blog') ;
