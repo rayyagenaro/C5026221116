@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title> @yield('judulhalaman') </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<title>@yield('title')</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
+<div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">5026221116 Athaalla Rayya Genaro Iswandoko</a>
+        <a class="navbar-brand" href="#">5026221116 - Athaalla Rayya Genaro Iswandoko</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
@@ -26,7 +31,7 @@
           <!-- Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              DATABASE
+              Pegawai
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="/pegawai">Pegawai</a>
@@ -36,12 +41,25 @@
           </li>
         </ul>
       </nav>
-<div class="container">
-    @yield('konten')
+	<hr/>
+	<br/>
+	<br/>
 
-    @include('footer')
+	<!-- bagian judul halaman blog -->
+	 @yield('judul_halaman')
 
+
+
+<!-- bagian konten blog -->
+@yield('konten')
+
+
+<br />
+<br />
+<hr />
+<footer>
+    <p>&copy; <a href="https://www.malasngoding.com">Rayya Genaro</a>. 2023</p>
+</footer>
 </div>
-
 </body>
 </html>
