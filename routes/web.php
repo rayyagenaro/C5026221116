@@ -102,3 +102,12 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+Route::get('/bagian','App\Http\Controllers\bagianController@index');
+Route::get('/bagian/tambahbagian','App\Http\Controllers\bagianController@tambahbagian');
+Route::post('/bagian/store','App\Http\Controllers\bagianController@store');
