@@ -10,7 +10,6 @@ class bagianController extends Controller{
     public function index()
 	{
         $bagian = DB::table('bagian')->get();
-        $bagian = DB::table('bagian')->paginate(15);
 		return view('indexbagian',['bagian' => $bagian]);
 	}
 

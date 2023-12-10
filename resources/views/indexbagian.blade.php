@@ -26,5 +26,4 @@
 		</tr>
 		@endforeach
 	</table>
-    {{$bagian->links()}}
 @endsection
