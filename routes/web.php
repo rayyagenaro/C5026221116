@@ -111,3 +111,9 @@ Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@sto
 Route::get('/bagian','App\Http\Controllers\bagianController@index');
 Route::get('/bagian/tambahbagian','App\Http\Controllers\bagianController@tambahbagian');
 Route::post('/bagian/store','App\Http\Controllers\bagianController@store');
+
+
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@index');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
