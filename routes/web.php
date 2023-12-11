@@ -103,17 +103,21 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
-
+//Route CRUD Pra EAS (Cowok)
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
 Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
 
+//Route CRUD Pra EAS (Bagian)
 Route::get('/bagian','App\Http\Controllers\bagianController@index');
 Route::get('/bagian/tambahbagian','App\Http\Controllers\bagianController@tambahbagian');
 Route::post('/bagian/store','App\Http\Controllers\bagianController@store');
 
-
+//Route CRUD Pra EAS (Cewek)
 Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@index');
 Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
 Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
+
+// Route CRUD EAS (KODE FF)
+Route::get('/counter','App\Http\Controllers\CounterController@index');
